@@ -3,7 +3,7 @@ package com.mit;
 
 import java.util.Scanner;
 
-public class CaesarCipher {
+public class CaesarCipher2 {
 	static int mod;
 	static int temp;
 	static int quotient;
@@ -25,23 +25,14 @@ public class CaesarCipher {
 					int n = 0;
 					char decrpt = 0;
 					int m = a.toUpperCase().charAt(i);
-					if (m > 96 && m < 123) {
-
-						n = m - 97;
-					}
-					if (m > 64 && m < 91) {
-
-						n = m - 65;
-					}
+					
+											n = m - 65;
+					
 					int mod = mod(n + key, b);
-					if (m > 96 && m < 123) {
-						decrpt = (char) (mod + 97);
-						ciphertext += decrpt;
-					}
-					if (m > 64 && m < 91) {
+					
 						decrpt = (char) (mod + 65);
 						ciphertext += decrpt;
-					}
+				
 
 				}
 				System.out.println("cipher text is " + ciphertext);
@@ -62,24 +53,15 @@ public class CaesarCipher {
 				for (int i = 0; i < a.length(); i++) {
 					int n = 0;
 					char decrpt = 0;
-					int m = a.charAt(i);
-					if (m > 96 && m < 123) {
-
-						n = m - 97;
-					}
-					if (m > 64 && m < 91) {
+					int m = a.toUpperCase().charAt(i);
 
 						n = m - 65;
-					}
+
 					int mod = mod(n - key, b);
-					if (m > 96 && m < 123) {
-						decrpt = (char) (mod + 97);
-						plaintext += decrpt;
-					}
-					if (m > 64 && m < 91) {
+					
 						decrpt = (char) (mod + 65);
 						plaintext += decrpt;
-					}
+				
 
 				}
 				System.out.println("plain text is " + plaintext);
@@ -101,23 +83,14 @@ public class CaesarCipher {
 						int n = 0;
 						char decrpt = 0;
 						int m = a.charAt(i);
-						if (m > 96 && m < 123) {
-
-							n = m - 97;
-						}
-						if (m > 64 && m < 91) {
-
+				
 							n = m - 65;
-						}
+				
 						int mod = mod(n - key, b);
-						if (m > 96 && m < 123) {
-							decrpt = (char) (mod + 97);
-							plaintext += decrpt;
-						}
-						if (m > 64 && m < 91) {
+						
 							decrpt = (char) (mod + 65);
 							plaintext += decrpt;
-						}
+				
 
 					}
 					System.out.println("plain text for key " + key + " is: " + plaintext);
