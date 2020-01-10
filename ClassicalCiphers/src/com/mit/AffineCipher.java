@@ -26,7 +26,7 @@ public class AffineCipher {
 				for (int i = 0; i < a.length(); i++) {
 					int n = 0;
 					char decrpt = 0;
-					int m = a.charAt(i);
+					int m = a.charAt(i); 
 					if (m > 96 && m < 123) {
 
 						n = m - 97;
