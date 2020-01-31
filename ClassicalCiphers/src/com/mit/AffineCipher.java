@@ -96,7 +96,7 @@ public class AffineCipher {
 			}
 			break;
 		}
-		case 3: {
+		case 3: { 
 			System.out.println("Enter The plain text:");
 			String pt = k.next();
 			System.out.println("Enter The cipher text:");
