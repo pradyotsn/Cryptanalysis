@@ -29,7 +29,7 @@ public class PR
         } 
         /** return divisor **/
         return g;
-    }//
+    }
 //GCD of two numbers
     public  long gcd(long p, long q)
     {
