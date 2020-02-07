@@ -64,6 +64,7 @@ public class PR
     
     public static void main(String[] args)
     {
+    	 	
         Scanner scan = new Scanner(System.in);
         System.out.println("Pollard Rho Algorithm\n");                
         System.out.println("Enter a number");
