@@ -38,15 +38,13 @@ public class BSGS {
 	        
 	        for (int i = 0; i < l; i++)  
 		        {  
-		            // Calculate (a ^ j) * b and check  
-		            // for collision  
 		            if (arr.contains(t))  
 		            {  
 		            	System.out.println("arr.indexOf(t)"+arr.indexOf(t));
 		                int ans = (arr.indexOf(t)+1) + i * l;  
 		                ans = ans % p;  
 		                    return ans;  
-		            }  
+		            }  //
 		            t=(t*(int)h) % p;
 		              
 		        } 
