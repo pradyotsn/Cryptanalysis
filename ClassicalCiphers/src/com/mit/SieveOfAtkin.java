@@ -3,7 +3,7 @@ package com.mit;
 import java.util.Arrays;
 
 public class SieveOfAtkin {
-private static int limit = 100;
+private static int limit = 500;
 private static boolean[] sieve = new boolean[limit + 1];
 private static int limitSqrt = (int)Math.sqrt((double)limit);
 
