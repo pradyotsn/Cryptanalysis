@@ -13,7 +13,7 @@ public class BSGS {
 	  
 	        ArrayList<Integer> arr = new ArrayList<Integer>(l); 
 	        int an;  
-	        for (int i = 1; i <= l; i++)  
+	        for (int i = 0; i <= l; i++)  
 	        {
 	            an = (int) Math.pow(a, i) % p;  
 	            arr.add(an);
@@ -41,7 +41,7 @@ public class BSGS {
 		            if (arr.contains(t))  
 		            {  
 		            	System.out.println("arr.indexOf(t)"+arr.indexOf(t));
-		                int ans = (arr.indexOf(t)+1) + i * l;  
+		                int ans = (arr.indexOf(t)) + i * l;  
 		                ans = ans % p;  
 		                System.out.println("Soln");
 		                    return ans;  
