@@ -64,7 +64,10 @@ public class PR
     
     public static void main(String[] args)
     {
+<<<<<<< HEAD
     	 	
+=======
+>>>>>>> branch 'master' of https://github.com/pradyotsn/Cryptanalysis.git
         Scanner scan = new Scanner(System.in);
         System.out.println("Pollard Rho Algorithm\n");                
         System.out.println("Enter a number");

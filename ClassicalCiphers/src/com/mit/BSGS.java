@@ -43,6 +43,7 @@ public class BSGS {
 		            	System.out.println("arr.indexOf(t)"+arr.indexOf(t));
 		                int ans = (arr.indexOf(t)+1) + i * l;  
 		                ans = ans % p;  
+		                System.out.println("Soln");
 		                    return ans;  
 		            }  //
 		            t=(t*(int)h) % p;
