@@ -59,7 +59,7 @@ public static void main(String[] args) {
     } // end for
     // remove all perfect squares since the quadratic
     // wheel factorization filter removes only some of them
-    for (int n = 5; n <= limitSqrt; n++) {
+    for (int n = 5; n <= limitSqrt; n++) {//
         if (sieve[n]) {
             int x = n * n;
             for (int i = x; i <= limit; i += x) {

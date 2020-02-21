@@ -57,7 +57,7 @@ public class Eratostenes {
 	      
 	    public static void main(String args[]) 
 	    { 
-	        int n = 50; 
+	        int n = 500; 
 	        System.out.print("Following are the prime numbers "); 
 	        System.out.println("smaller than or equal to " + n); 
 	        Eratostenes obj = new Eratostenes(); 
